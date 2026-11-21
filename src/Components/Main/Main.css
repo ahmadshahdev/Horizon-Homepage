@@ -1,0 +1,194 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--PrimaryColor: hsl(199, 100%, 33%);
+	--SecondaryColor: hsl(187, 85%, 43%);
+	--gradientColor: linear-gradient(
+		to right,
+		hsl(187, 85%, 43%),
+		hsl(199, 100%, 33%)
+	);
+	--whiteColor: hsl(0, 0%, 100%);
+	--blackColor: hsl(201, 33%, 16%);
+	--textColor: hsl(240, 4%, 36%);
+	--whiteColorDeam: hsl(0, 0%, 93%);
+	--greyText: rgb(190, 190, 190);
+	--inputColor: rgb(239, 239, 239);
+	--bodyColor: rgb(240, 240, 246);
+	--cardBG: rgb(225, 225, 235);
+	--cardHover: rgb(255, 255, 255);
+}
+
+.main {
+	width: 100%;
+}
+
+.title {
+	position: relative;
+	width: max-content;
+	color: var(--textColor);
+	margin: 1rem 0;
+	z-index: 2;
+}
+
+.title::after {
+	position: absolute;
+	background: var(--blackColor);
+	height: 5px;
+	width: 120px;
+	right: 0;
+	bottom: 5px;
+	z-index: -1;
+}
+
+.secContent {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 2rem;
+	justify-items: center;
+	width: 100%;
+	align-items: start;
+}
+
+.singleDestination {
+	background: var(--cardBG);
+	border-radius: 10px;
+	box-shadow: 0px 4px 8px rgba(140, 140, 141, 0.7);
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 100%;
+	transition: all 0.3s ease;
+}
+
+.singleDestination:hover {
+	background: var(--cardHover);
+	box-shadow: 1px 4px 4px rgba(85, 85, 114, 0.5);
+	transform: translateY(-5px);
+}
+
+.imgDiv {
+	height: 200px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.imgDiv img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transition: 0.6s ease;
+}
+
+.imgDiv img:hover {
+	transform: scale(1.1);
+}
+
+.cardINfo {
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	gap: 1rem;
+	flex-grow: 1;
+}
+
+.desTitle {
+	color: var(--blackColor);
+	font-size: 1.25rem;
+}
+
+.continent {
+	gap: 0.5rem;
+}
+
+.continent .icon {
+	color: var(--textColor);
+	font-size: 1.1rem;
+	vertical-align: middle;
+	margin-right: 4px;
+}
+
+.name {
+	color: var(--textColor);
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.fees {
+	width: 100%;
+	justify-content: space-between;
+	padding: 1rem;
+	margin: 1rem 0;
+	border-top: 1.5px solid var(--greyText);
+	border-bottom: 1.5px solid var(--greyText);
+}
+
+.grade {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 20px;
+	max-width: 100px;
+	color: var(--textColor);
+}
+
+.grade small {
+	text-align: center;
+	background: var(--gradientColor);
+	border-radius: 1rem;
+	padding: 1px 10px;
+	color: var(--whiteColor);
+	font-size: 10px;
+	margin-left: 8px;
+}
+
+.price {
+	font-size: 2rem;
+	color: var(--blackColor);
+}
+
+.decs {
+	font-size: 13px;
+	color: var(--textColor);
+	font-weight: 500;
+}
+
+.cardINfo .btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	margin-top: 1rem;
+	color: var(--whiteColor);
+	font-weight: 600;
+	background: var(--gradientColor);
+	border-radius: 2rem;
+	padding: 0.6rem 1rem;
+	transition: background 0.3s ease;
+}
+
+.cardINfo .btn:hover {
+	background: var(--SecondaryColor);
+}
+
+.cardINfo .btn .icon {
+	align-self: center;
+	font-size: 18px;
+}
+
+
+@media screen and (min-width: 500px) {
+	.title{
+		font-size: 2rem;
+	}
+
+	.title::after{
+		width: 155px !important;
+	}
+}

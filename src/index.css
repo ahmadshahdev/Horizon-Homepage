@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Noto+Serif:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&family=Radio+Canada:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Radio Canada", sans-serif;
+}
+
+:root {
+	--PrimaryColor: hsl(199, 100%, 33%);
+	--SecondaryColor: hsl(187, 85%, 43%);
+	--gradientColor: linear-gradient(
+		to right,
+		hsl(187, 85%, 43%),
+		hsl(199, 100%, 33%)
+	);
+	--whiteColor: hsl(0, 0%, 100%);
+	--blackColor: hsl(201, 33%, 16%);
+	--textColor: hsl(240, 4%, 36%);
+	--whiteColorDeam: hsl(0, 0%, 93%);
+	--greyText: rgb(190, 190, 190);
+	--inputColor: rgb(239, 239, 239);
+	--bodyColor: rgb(240, 240, 246);
+	--cardBG: rgb(225, 225, 235);
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+img,
+video {
+	width: 100%;
+	height: auto;
+}
+
+input {
+	font-size: 100%;
+}
+
+body {
+	background: var(--bodyColor);
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+.section {
+	padding: 4rem 0rem 2rem;
+}
+
+.container {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	vertical-align: middle;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.grid {
+	display: grid;
+	align-items: center;
+}
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.4rem;
+	padding: 0.6rem 1.5rem;
+	background: var(--gradientColor);
+	border-radius: 3rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.btn a {
+	font-weight: 500;
+	color: var(--whiteColor);
+}
+
+.btn:hover {
+	background: var(--SecondaryColor);
+}
