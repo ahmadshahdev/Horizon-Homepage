@@ -1,16 +1,41 @@
-# React + Vite
+# Horizon-Homepage 🌍
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An early frontend practice project built in 2025 while learning React and custom CSS. This repository contains a single-page travel landing page created to practice component structuring, responsive styling, and scroll-based UI interactions.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [Horizon Homepage](https://horizon-homepage-lilac.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🎯 What I Practiced Here
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Since this was an early hands-on build focused purely on the homepage UI, the main goals were:
 
-## Expanding the ESLint configuration
+* **React Fundamentals:** Breaking a static travel layout into clean, reusable JSX components.
+* **Custom CSS Styling:** Building responsive sections, cards, and navigation layouts from scratch using pure CSS.
+* **On-Scroll Effects:** Implementing scroll-triggered animations and transitions to bring page sections into view smoothly as the user scrolls.
+* **Visual Hierarchy:** Practicing spacing, typography, and image placement for a travel-themed hero and destination showcase.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+* **React** — Component architecture and UI rendering
+* **CSS3** — Custom styling, responsive layouts, and transitions
+* **Vercel** — Deployment and live preview
+
+---
+
+## 🚀 Run Locally
+
+```bash
+# Clone the repository
+git clone [https://github.com/ahmadshahdev/Horizon-Homepage.git](https://github.com/ahmadshahdev/Horizon-Homepage.git)
+
+# Navigate into the folder
+cd Horizon-Homepage
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
